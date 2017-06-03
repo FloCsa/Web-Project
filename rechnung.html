@@ -11,24 +11,96 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Rechnung SmartChimp</title>
+    <style>
+        table {border-bottom: 1px solid black;
+                border-top: 1px solid black;}
+    </style>
 </head>
 <body>
 <div class ="container">
     <div class ="page-header">
-        <h1>Rechnung</h1>
+        <h1>SmartChimp</h1>
         <br>
-        <p id="My-Company">
-            <h4>Firma<br>
+        <p id="Mainaddress">
+            <h4>SmartChimp AG<br>
+                Hans-Peter Self-HTML<br>
+                Keineahnungstraße 77<br>
+                83059 Kolbermoor<br>
+                Deutschland
+            </h4>
+        </p>
+        <br><br>
+        <p id="Address">
+            <h4>Kundenfirma<br>
                 Herr Vorname Nachname<br>
                 Straße<br>
                 PLZ Ort<br>
                 Land
             </h4>
         </p>
+        <br><br>
+    </div>
+        <h3>Rechnung</h3>
+        <br><br>
+        <table>
+            <tr>
+                <colgroup width="230" span="7"></colgroup>
+                <th>Pos.</th>
+                <th>Artikel:</th>
+                <th>Rabatt:</th>
+                <th>Anzahl:</th>
+                <th>Preis</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Gadget 1</td>
+                <td>10%</td>
+                <td>4</td>
+                <td>5400,00 €</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Gadget 2</td>
+                <td>0%</td>
+                <td>1</td>
+                <td>33,44 €</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Gadget 3</td>
+                <td>0%</td>
+                <td>9</td>
+                <td>12,99 €</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Gadget 4</td>
+                <td>6%</td>
+                <td>1</td>
+                <td>798,00 €</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <colgroup width="1070"></colgroup>
+                <th>Gesamtsumme:</th>
+                <th>6.244,43 €</th>
+            </tr>
+        </table>
+    <br><br>
+    <div class="Greetings">
+        <h4> Bitte überweisen Sie den Gesamtbetrag auf folgendes Konto:
+            <br><br>
+            Commerzbank München<br>
+            Bankleitzahl 340 300 22<br>
+            Kontonummer 12345667
+            <br><br><br>
+            Mit freundlichen Grüßen
+            <br><br><br><br>
+            Hans Peter Self-HTML
+
+        </h4>
     </div>
 </div>
-
-
-asdfasdfasf
 </body>
 </html>

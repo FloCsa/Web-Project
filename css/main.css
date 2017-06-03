@@ -5,3 +5,10 @@
 .row {
     height: 30px;
 }
+
+.address {
+    text-align: left;
+}
+.greetings {
+    text-align: left;
+}
