@@ -1,3 +1,25 @@
+/* line 1, ../sass/_rechnung.scss */
+.address {
+  text-align: left;
+  font-family: "Times New Roman";
+  font-size: medium;
+}
+
+/* line 6, ../sass/_rechnung.scss */
+#Ansprechpartner {
+  font-size: smaller;
+}
+
+/* line 9, ../sass/_rechnung.scss */
+.greetings {
+  text-align: left;
+}
+
+/* line 12, ../sass/_rechnung.scss */
+h3, .greetings {
+  font-family: "Times New Roman";
+}
+
 /* Space out content a bit */
 /* line 3, ../sass/_registrierung.scss */
 body.withSpace {
