@@ -20,7 +20,7 @@ header::before {
 .kontobox {
   border-left: 1px solid #8e8e8e;
   border-right: 1px solid #8e8e8e;
-  margin-left: 10px;
+  margin-left: 0px;
   margin-right: 10px;
   padding: 10px;
   box-sizing: border-box;
@@ -77,4 +77,33 @@ header::before {
   &:hover {
     border: 1px solid black;
   }
+}
+
+.glyphicon.glyphicon-chevron-right {
+  padding: 10px;
+}
+.glyphicon.glyphicon-chevron-down {
+  padding: 10px;
+}
+
+
+td.content {
+  width: 250px;
+  height: 20px;
+  box-sizing: border-box;
+}
+
+td.icons {
+  width: 100px;
+  box-sizing: border-box;
+}
+
+td.price {
+  width: 100px;
+  box-sizing: border-box;
+}
+
+button.arrow {
+  border: none;
+  background-color: transparent;
 }

@@ -144,7 +144,7 @@ header::before {
 .kontobox {
   border-left: 1px solid #8e8e8e;
   border-right: 1px solid #8e8e8e;
-  margin-left: 10px;
+  margin-left: 0px;
   margin-right: 10px;
   padding: 10px;
   box-sizing: border-box;
@@ -206,4 +206,39 @@ header::before {
 /* line 77, ../sass/_overview.scss */
 .glyphicon.glyphicon-trash:hover {
   border: 1px solid black;
+}
+
+/* line 82, ../sass/_overview.scss */
+.glyphicon.glyphicon-chevron-right {
+  padding: 10px;
+}
+
+/* line 85, ../sass/_overview.scss */
+.glyphicon.glyphicon-chevron-down {
+  padding: 10px;
+}
+
+/* line 90, ../sass/_overview.scss */
+td.content {
+  width: 250px;
+  height: 20px;
+  box-sizing: border-box;
+}
+
+/* line 96, ../sass/_overview.scss */
+td.icons {
+  width: 100px;
+  box-sizing: border-box;
+}
+
+/* line 101, ../sass/_overview.scss */
+td.price {
+  width: 100px;
+  box-sizing: border-box;
+}
+
+/* line 106, ../sass/_overview.scss */
+button.arrow {
+  border: none;
+  background-color: transparent;
 }
