@@ -147,9 +147,14 @@ header::before {
   margin-left: 10px;
   margin-right: 10px;
   padding: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100px;
+  height: 38px;
+  text-align: center;
 }
 
-/* line 28, ../sass/_overview.scss */
+/* line 33, ../sass/_overview.scss */
 .kontobetrag1 {
   height: 20px;
   width: 90px;
@@ -160,7 +165,7 @@ header::before {
   float: right;
 }
 
-/* line 39, ../sass/_overview.scss */
+/* line 44, ../sass/_overview.scss */
 .kontobetra2 {
   height: 20px;
   width: 90px;
