@@ -255,3 +255,143 @@ button.arrow::before {
 button.arrow.collapsed::before {
   transform: rotate(0deg);
 }
+
+/* line 1, ../sass/_Login.scss */
+#regContainer {
+  margin-top: 3%;
+}
+
+/* line 5, ../sass/_Login.scss */
+.panel-login {
+  border-color: #ccc;
+  background-color: #f9f8f8;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* line 12, ../sass/_Login.scss */
+.panel-login > .panel-heading {
+  text-align: center;
+}
+
+/* line 15, ../sass/_Login.scss */
+.panel-login > .panel-heading a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 28px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+/* line 23, ../sass/_Login.scss */
+.panel-login > .panel-heading a.active {
+  font-size: 34px;
+}
+
+/* line 26, ../sass/_Login.scss */
+.panel-login > .panel-heading hr {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.15), transparent);
+  background-image: -moz-linear-gradient(left, transparent, rgba(0, 0, 0, 0.15), transparent);
+  background-image: -ms-linear-gradient(left, transparent, rgba(0, 0, 0, 0.15), transparent);
+  background-image: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.15), transparent);
+}
+
+/* line 37, ../sass/_Login.scss */
+.panel-login input[type="text"], .panel-login input[type="email"], .panel-login input[type="password"] {
+  height: 45px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+/* line 45, ../sass/_Login.scss */
+.panel-login input:hover,
+.panel-login input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: #ccc;
+}
+
+/* line 53, ../sass/_Login.scss */
+.btn-login {
+  background-color: #3D9DB3;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  height: auto;
+  font-weight: normal;
+  padding: 14px 0;
+  text-transform: uppercase;
+  border-color: #2d92a9;
+}
+
+/* line 64, ../sass/_Login.scss */
+.btn-login:hover,
+.btn-login:focus {
+  color: #fff;
+  background-color: #198da8;
+  border-color: #53A3CD;
+}
+
+/* line 70, ../sass/_Login.scss */
+.btn-register {
+  background-color: #17ae47;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  height: auto;
+  font-weight: normal;
+  padding: 14px 0;
+  text-transform: uppercase;
+  border-color: #1CB94A;
+}
+
+/* line 81, ../sass/_Login.scss */
+.btn-register:hover,
+.btn-register:focus {
+  color: #fff;
+  background-color: #1CA347;
+  border-color: #1CA347;
+}
+
+/* line 88, ../sass/_Login.scss */
+.fullscreen_bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("https://jointgroup.es/wp-content/uploads/2016/11/joint-network-group.jpg");
+  background-repeat: repeat;
+}
+
+/* line 100, ../sass/_Login.scss */
+.panel-heading a {
+  font-size: 48px;
+  color: #066a75;
+  padding: 2px 0 10px 0;
+  font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* line 110, ../sass/_Login.scss */
+.panel-heading a {
+  background: -webkit-repeating-linear-gradient(-45deg, #12535d, #12535d 20px, #406f76 20px, #406f76 40px, #12535d 40px);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
