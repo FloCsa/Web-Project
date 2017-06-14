@@ -32,7 +32,7 @@ body.withSpace {
   padding-bottom: 20px;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first html */
+/* Everything but the jumbotron gets side spacing for mobile first views */
 /* line 9, ../sass/_registrierung.scss */
 .header,
 .marketing,
