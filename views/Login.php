@@ -10,7 +10,7 @@
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
     <script type="text/javascript" src="../js/Login.js"></script>
-    <link rel="stylesheet" href="../css/Login.css"><
+    <link rel="stylesheet" href="../css/main.css"><
     <meta charset="UTF-8">
     <title>Title</title>
 </head>

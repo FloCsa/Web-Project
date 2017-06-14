@@ -23,16 +23,12 @@ var Eingabepw01=document.getElementById("password1");
 var Eingabepw02=document.getElementById("confirm-password");
 var message= document.getElementById("confirmMessage");
 
-
     if (Eingabepw01.value === Eingabepw02.value){
         alert("Password matches");
-        (window.open('index.html'));
-
-
-
+        (window.open("index.php"));
     }else{
         alert("password doesn´t match");
     }
-    
+
 };
 
