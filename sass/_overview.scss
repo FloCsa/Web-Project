@@ -82,9 +82,6 @@ header::before {
 .glyphicon.glyphicon-chevron-right {
   padding: 10px;
 }
-.glyphicon.glyphicon-chevron-down {
-  padding: 10px;
-}
 
 
 td.content {
@@ -106,4 +103,18 @@ td.price {
 button.arrow {
   border: none;
   background-color: transparent;
+
+  &::before {
+    transform:rotate(90deg);
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-delay: 0ms;
+    transition-timing-function: linear;
+    display: inline-block;
+  }
+
+
+  &.collapsed::before {
+    transform:rotate(0deg);
+  }
 }
