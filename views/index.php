@@ -35,7 +35,7 @@
         <button type="button" class="glyphicon glyphicon-chevron-right arrow collapsed"></button>
         <span class="kontobox">Kontoname</span>
         <button type="button" class="btn btn-default btn-circle" data-toggle="tooltip"
-                data-placement="auto"
+                data-placement="auto" onclick="window.location.href='rechnungErstellen.php'"
                 title="Rechnung erstellen">
             <span class="glyphicon glyphicon-plus"></span>
         </button>
@@ -46,7 +46,7 @@
         <button type="button" class="glyphicon glyphicon-chevron-right arrow collapsed" data-toggle="collapse" data-target="#demo"></button>
         <span class="kontobox">Kontoname</span>
         <button type="button" class="btn btn-default btn-circle" data-toggle="tooltip"
-                data-placement="auto"
+                data-placement="auto" onclick="window.location.href='rechnungErstellen.php'"
                 title="Rechnung erstellen">
             <span class="glyphicon glyphicon-plus"></span>
         </button>

@@ -34,7 +34,7 @@
                     </div>
                     <div class="form-group">
                         <label>Straße/Hausnummer</label>
-                        <input type="text" placeholder="Straße/Hausnummer" rows="3" class="form-control"></textarea>
+                        <input type="text" placeholder="Straße/Hausnummer" rows="3" class="form-control">
                     </div>
                     <div class="row">
                         <div class="col-sm-4 form-group">
@@ -59,7 +59,7 @@
                         <input type="text" placeholder="E-Mail Adresse" class="form-control">
                     </div>
                     <div class="Speichern">
-                    <button type="button" class="btn btn-lg btn-info" onclick="window.open('rechnung.html')">Speichern</button>
+                    <button type="button" class="btn btn-lg btn-info" onclick="window.location.href='index.php'">Speichern</button>
                     </div>
                 </div>
             </form>
