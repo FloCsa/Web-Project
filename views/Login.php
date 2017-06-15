@@ -34,10 +34,10 @@
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-lg-12">
-                            <form id="login-form" action="index.php" method="post" role="form" style="display: block;">
+                            <form id="login-form" action="Login.php" method="post" role="form" style="display: block;">
                                 <div class="form-group">
-                                    <label for="username">Username</label>
-                                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                                    <label for="email">E-Mail</label>
+                                    <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="E-Mail" value="">
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Password</label>
@@ -55,14 +55,15 @@
                                     </div>
                                 </div>
                             </form>
-                            <form id="register-form"  method="post" role="form" style="display: none;">
+
+                            <form id="register-form" action="Login.php" method="post" role="form" style="display: none;">
                                 <div class="form-group">
-                                    <label for="username">Username</label>
-                                    <input type="text" name="username" id="username1" tabindex="1" class="form-control" placeholder="Username" value="">
+                                    <label for="email1">E-Mail</label>
+                                    <input type="email" name="f[email1]" required id="email1" tabindex="1" class="form-control" placeholder="E-Mail" value="">
                                 </div>
                                 <div class="form-group">
                                     <label for="password1">Password</label>
-                                    <input type="password" name="password1" required id="password1" tabindex="2" class="form-control" placeholder="Password">
+                                    <input type="password" name="f[password1]" required id="password1" minlength="6" tabindex="2" class="form-control" placeholder="Password">
                                 </div>
                                 <div class="form-group">
                                     <label for="confirm-password">Confirm password</label>
@@ -71,12 +72,13 @@
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-sm-6 col-sm-offset-3">
-                                            <input type="submit"  name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" onclick="checkPW();" value="Register Now" >
+                                            <input type="submit"  name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" onclick="checkPW(); checkMail(); checkall()"  value="Register Now" >
                                             <span id="confirmMessage" class="confirmMessage"></span>
                                         </div>
                                     </div>
                                 </div>
                             </form>
+
                         </div>
                     </div>
                 </div>
