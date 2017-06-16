@@ -1,13 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "rootuser";
-$password = "rootuserpass";
-$dbname = "webproject";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-?>
+require_once('classes/Database.php');
+
+define("DB_HOST", 'localhost');
+define("DB_NAME", 'webproject');
+define("DB_USER", 'rootuser');
+define("DB_PASS", 'rootuserpass');
