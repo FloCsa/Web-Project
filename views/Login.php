@@ -87,4 +87,13 @@
     </div>
 </div>
 </body>
+<?php
+require_once('includes/classes/Database.php');
+
+define("DB_HOST", 'localhost');
+define("DB_NAME", 'testdatabase');
+define("DB_USER", 'testuser2');
+define("DB_PASS", 'testpass');
+
+$db= new Database(); ?>
 </html>

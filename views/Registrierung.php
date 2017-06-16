@@ -21,6 +21,7 @@
                     <label for="Frau">Frau</label>
                     <input type="radio" id="Herr" name="Anrede" value="Frau">
                     <label for="Herr">Herr</label>
+                    <br>
                 </div>
                 <div class="col-sm-6 form group">
                     <br>
@@ -40,6 +41,7 @@
                             </div>
                         </div>
                         <div class="col-sm-6 form-group">
+                            <br>
                             <div id="nname">
                             <label>Nachname</label>
                             <input type="text" placeholder="Nachname" class="form-control">
