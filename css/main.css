@@ -154,7 +154,7 @@ header::before {
   padding: 10px;
   box-sizing: border-box;
   display: inline-block;
-  width: 100px;
+  width: 200px;
   height: 38px;
   text-align: center;
 }

@@ -27,7 +27,8 @@ include "../includes/dbconnection.php"
             <h1>SmartChimp
                 <small style="font-size: 12px;">logged in as..</small>
                 <button type="button" class="btn btn-default btn-circle floatR" data-toggle="tooltip"
-                        data-placement="auto" title="Konto erstellen" onclick="window.location.href='eingabeRechnung.php'">
+                        data-placement="auto" title="Konto erstellen"
+                        onclick="window.location.href='eingabeRechnung.php'">
                     <span class="glyphicon glyphicon-plus"></span>
                 </button>
                 <span style="font-size: 15px; float: right; margin: 10px;">Neues Konto</span>
@@ -46,9 +47,22 @@ include "../includes/dbconnection.php"
         <div class="kontobetrag1">1455,12 €</div>
 
     </div>
+    <?php
+    $liste = array();
+    $db = new Database();
+    $sql = "SELECT kontoname FROM konto;";
+    $result = $db->query($sql);
+    while ($kontoname = $db->fetchObject($result)) {
+        $temp = $kontoname->kontoname;
+        $liste[] = $temp;
+    }
+    foreach ($liste as $wert):
+    ?>
+
     <div class="well">
-        <button type="button" class="glyphicon glyphicon-chevron-right arrow collapsed" data-toggle="collapse" data-target="#demo"></button>
-        <span class="kontobox">Kontoname</span>
+        <button type="button" class="glyphicon glyphicon-chevron-right arrow collapsed" data-toggle="collapse"
+                data-target="#demo"></button>
+        <span class="kontobox"><?php echo $wert; ?></span>
         <button type="button" class="btn btn-default btn-circle" data-toggle="tooltip"
                 data-placement="auto" onclick="window.location.href='rechnungErstellen.php'"
                 title="Rechnung erstellen">
@@ -57,30 +71,34 @@ include "../includes/dbconnection.php"
         <div class="kontobetrag1">432,12 €</div>
         <div class="kontobetra2">765,23 €</div>
 
+        <?php endforeach; ?>
+
     </div>
     <div class="collapse" id="demo">
-    <table class="table table-hover">
+        <table class="table table-hover">
 
-        <tbody>
-        <tr>
-            <td class="icons"><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash"></span></td>
-            <td class="content">beschreibung</td>
-            <td class="price">betrag</td>
-            <td class="price">betrag</td>
-        </tr>
+            <tbody>
+            <tr>
+                <td class="icons"><span class="glyphicon glyphicon-pencil"></span><span
+                            class="glyphicon glyphicon-trash"></span></td>
+                <td class="content">beschreibung</td>
+                <td class="price">betrag</td>
+                <td class="price">betrag</td>
+            </tr>
 
-        </tbody>
-    </table>
+            </tbody>
+        </table>
     </div>
     <div class="panel panel-default">
-    <div class="panel-footer" style="text-align: right">
-        <a href="" style="padding-right: 4px; border-right: 1px solid #c9c9c9">link 1</a>
-        <a href="" style="padding-right: 4px; border-right: 1px solid #c9c9c9">link 2</a>
-        <a href="">link 3</a>
-    </div>
+        <div class="panel-footer" style="text-align: right">
+            <a href="" style="padding-right: 4px; border-right: 1px solid #c9c9c9">link 1</a>
+            <a href="" style="padding-right: 4px; border-right: 1px solid #c9c9c9">link 2</a>
+            <a href="">link 3</a>
+        </div>
     </div>
 
 
 </div>
+<?php $db->__destruct(); ?>
 </body>
 </html>
