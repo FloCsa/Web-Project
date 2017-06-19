@@ -56,6 +56,7 @@ include "../includes/dbconnection.php"
         $temp = $kontoname->kontoname;
         $liste[] = $temp;
     }
+
     foreach ($liste as $wert):
     ?>
 
@@ -71,9 +72,11 @@ include "../includes/dbconnection.php"
         <div class="kontobetrag1">432,12 €</div>
         <div class="kontobetra2">765,23 €</div>
 
-        <?php endforeach; ?>
+
 
     </div>
+    <?php endforeach; ?>
+
     <div class="collapse" id="demo">
         <table class="table table-hover">
 
