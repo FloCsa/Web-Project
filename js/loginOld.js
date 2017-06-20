@@ -1,28 +1,8 @@
-$(function() {
-
-    $('#login-form-link').click(function(e) {
-        $("#login-form").delay(100).fadeIn(100);
-        $("#register-form").fadeOut(100);
-        $('#register-form-link').removeClass('active');
-        $(this).addClass('active');
-        e.preventDefault();
-    });
-    $('#register-form-link').click(function(e) {
-        $("#register-form").delay(100).fadeIn(100);
-        $("#login-form").fadeOut(100);
-        $('#login-form-link').removeClass('active');
-        $(this).addClass('active');
-        e.preventDefault();
-    });
-
-});
-
-
-
-
-
-
-
+/*  there are other libraries that could use "$" - so it is 100% save to use "jQuery" instead of "$"
+ if you don't use any other libraries than jQuery you could still go with "$"
+ so the following line would be
+ $(document).ready(function() {
+ */
 jQuery(document).ready(function() {
 
     var registerModal = $('#register-form');
@@ -30,7 +10,7 @@ jQuery(document).ready(function() {
 
 
     //so we have some input fields
-    registerModal.bind('submit', function(e, that) {
+    registerModal.find('form').bind('submit', function(e, that) {
         e.preventDefault();
 
         registerModal.find('.btn-primary').prop('disabled', true); //prevent sending the formular again while we check it

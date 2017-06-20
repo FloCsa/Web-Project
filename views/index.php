@@ -26,9 +26,7 @@ include "../includes/dbconnection.php"
         <div class="page-header">
             <h1>SmartChimp
                 <small style="font-size: 12px;">logged in as..</small>
-                <button type="button" class="btn btn-default btn-circle floatR" data-toggle="tooltip"
-                        data-placement="auto" title="Konto erstellen"
-                        onclick="window.location.href='eingabeRechnung.php'">
+                <button type="button" class="btn btn-default btn-circle floatR openOverlayToNewAccount" title="Konto erstellen">
                     <span class="glyphicon glyphicon-plus"></span>
                 </button>
                 <span style="font-size: 15px; float: right; margin: 10px;">Neues Konto</span>
@@ -59,11 +57,27 @@ include "../includes/dbconnection.php"
 
     foreach ($liste as $wert):
     ?>
-
+    <div class="modal fade container" id="test2" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">Konto hinzufügen</h4>
+                </div>
+                <div class="modal-body">
+                    nix
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
+                    <button type="button" class="btn btn-primary">Speichern</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="well">
         <button type="button" class="glyphicon glyphicon-chevron-right arrow collapsed" data-toggle="collapse"
-                data-target="#demo"></button>
-        <span class="kontobox"><?php echo $wert; ?></span>
+                data-target="#<?php echo $wert->kontoid; ?>"></button>
+        <span class="kontobox"><?php echo $wert->kontoname; ?></span>
         <button type="button" class="btn btn-default btn-circle" data-toggle="tooltip"
                 data-placement="auto" onclick="window.location.href='rechnungErstellen.php'"
                 title="Rechnung erstellen">
@@ -71,11 +85,9 @@ include "../includes/dbconnection.php"
         </button>
         <div class="kontobetrag1">432,12 €</div>
         <div class="kontobetra2">765,23 €</div>
-
-
-
     </div>
-    <?php endforeach; ?>
+    <?php endforeach;
+    ?>
 
     <div class="collapse" id="demo">
         <table class="table table-hover">
@@ -84,11 +96,11 @@ include "../includes/dbconnection.php"
             <tr>
                 <td class="icons"><span class="glyphicon glyphicon-pencil"></span><span
                             class="glyphicon glyphicon-trash"></span></td>
+                <td class ="number"> nummer</td>
                 <td class="content">beschreibung</td>
                 <td class="price">betrag</td>
                 <td class="price">betrag</td>
             </tr>
-
             </tbody>
         </table>
     </div>

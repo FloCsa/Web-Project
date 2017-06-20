@@ -17,6 +17,36 @@
         <div class="row">
             <form>
                 <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label>Vorname</label>
+                            <input type="text" placeholder="Vorname" class="form-control">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label>Nachname</label>
+                            <input type="text" placeholder="Nachname" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label>Straße</label>
+                            <input type="text" placeholder="Straße" class="form-control">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label>Hausnummer</label>
+                            <input type="text" placeholder="Hausnummer" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label>PLZ</label>
+                            <input type="text" placeholder="PLZ" class="form-control">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label>Ort</label>
+                            <input type="text" placeholder="Ort" class="form-control">
+                        </div>
+                    </div>
                     <div class="form-group">
                         <label>Beschreibung</label>
                         <input type="text" placeholder="Beschreibung" class="form-control">
@@ -26,12 +56,9 @@
                             <label>Betrag</label>
                             <input type="text" placeholder="Betrag" class="form-control">
                         </div>
-                        <div class="col-sm-6 form-group">
-                            <label>Identifikationsnummer</label>
-                            <input type="text" placeholder="Identifikationsnummer." class="form-control">
-                        </div>
                     </div>
-                    <div class="Speichern">
+                    <div class="Buttons">
+                        <button type="button" class="btn btn-lg btn-info" onclick="window.location.href='index.php'">Abbrechen</button>
                         <button type="button" class="btn btn-lg btn-info" onclick="window.location.href='index.php'">Speichern</button>
                     </div>
                 </div>
