@@ -91,7 +91,12 @@ td.content {
 }
 
 td.icons {
-  width: 100px;
+  width: 60px;
+  box-sizing: border-box;
+}
+
+td.number {
+  width: 40px;
   box-sizing: border-box;
 }
 

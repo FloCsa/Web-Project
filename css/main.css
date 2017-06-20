@@ -227,22 +227,28 @@ td.content {
 
 /* line 93, ../sass/_overview.scss */
 td.icons {
-  width: 100px;
+  width: 60px;
   box-sizing: border-box;
 }
 
 /* line 98, ../sass/_overview.scss */
+td.number {
+  width: 40px;
+  box-sizing: border-box;
+}
+
+/* line 103, ../sass/_overview.scss */
 td.price {
   width: 100px;
   box-sizing: border-box;
 }
 
-/* line 103, ../sass/_overview.scss */
+/* line 108, ../sass/_overview.scss */
 button.arrow {
   border: none;
   background-color: transparent;
 }
-/* line 107, ../sass/_overview.scss */
+/* line 112, ../sass/_overview.scss */
 button.arrow::before {
   transform: rotate(90deg);
   transition-property: transform;
@@ -251,7 +257,7 @@ button.arrow::before {
   transition-timing-function: linear;
   display: inline-block;
 }
-/* line 117, ../sass/_overview.scss */
+/* line 122, ../sass/_overview.scss */
 button.arrow.collapsed::before {
   transform: rotate(0deg);
 }

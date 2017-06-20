@@ -149,7 +149,7 @@ class Database
         return mysqli_insert_id($this->conn);
     }
 
-    /**
+    /** 
      * Returns the current Connection Ressource
      * @return mysqli
      */

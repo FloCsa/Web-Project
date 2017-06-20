@@ -36,54 +36,46 @@ include "../includes/dbconnection.php"
 
         </div>
     </header>
-    <div class="well">
-        <button type="button" class="glyphicon glyphicon-chevron-right arrow collapsed"></button>
-        <span class="kontobox">Kontoname</span>
-        <button type="button" class="btn btn-default btn-circle" data-toggle="tooltip"
-                data-placement="auto" onclick="window.location.href='rechnungErstellen.php'"
-                title="Rechnung erstellen">
-            <span class="glyphicon glyphicon-plus"></span>
-        </button>
-        <div class="kontobetrag1">1455,12 €</div>
 
-    </div>
     <?php
     $liste = array();
     $db = new Database();
-    $sql = "SELECT kontoname FROM konto;";
+    $sql = "SELECT kontoid, kontoname FROM konto;";
     $result = $db->query($sql);
-    while ($kontoname = $db->fetchObject($result)) {
-        $temp = $kontoname->kontoname;
-        $liste[] = $temp;
+    while ($konto = $db->fetchObject($result)) {
+        $liste[] = $konto;
     }
 
-    foreach ($liste as $wert):
+
     ?>
+    <?php foreach ($liste as $wert): ?>
 
-    <div class="well">
-        <button type="button" class="glyphicon glyphicon-chevron-right arrow collapsed" data-toggle="collapse"
-                data-target="#demo"></button>
-        <span class="kontobox"><?php echo $wert; ?></span>
-        <button type="button" class="btn btn-default btn-circle" data-toggle="tooltip"
-                data-placement="auto" onclick="window.location.href='rechnungErstellen.php'"
-                title="Rechnung erstellen">
-            <span class="glyphicon glyphicon-plus"></span>
-        </button>
-        <div class="kontobetrag1">432,12 €</div>
-        <div class="kontobetra2">765,23 €</div>
+        <div class="well">
+            <button type="button" class="glyphicon glyphicon-chevron-right arrow collapsed" data-toggle="collapse"
+                    data-target="#<?php echo $wert->kontoid ?>"></button>
+            <span class="kontobox"><?php echo $wert->kontoname; ?></span>
+            <button type="button" class="btn btn-default btn-circle" data-toggle="tooltip"
+                    data-placement="auto" onclick="window.location.href='rechnungErstellen.php'"
+                    title="Rechnung erstellen">
+                <span class="glyphicon glyphicon-plus"></span>
+            </button>
+            <div class="kontobetrag1">432,12 €</div>
+            <div class="kontobetra2">765,23 €</div>
+        </div>
 
 
 
-    </div>
+
     <?php endforeach; ?>
 
-    <div class="collapse" id="demo">
+    <div class="collapse" id="1">
         <table class="table table-hover">
 
             <tbody>
             <tr>
                 <td class="icons"><span class="glyphicon glyphicon-pencil"></span><span
                             class="glyphicon glyphicon-trash"></span></td>
+                <td class="number"> rnnr </td>
                 <td class="content">beschreibung</td>
                 <td class="price">betrag</td>
                 <td class="price">betrag</td>
@@ -92,6 +84,8 @@ include "../includes/dbconnection.php"
             </tbody>
         </table>
     </div>
+
+
     <div class="panel panel-default">
         <div class="panel-footer" style="text-align: right">
             <a href="" style="padding-right: 4px; border-right: 1px solid #c9c9c9">link 1</a>
