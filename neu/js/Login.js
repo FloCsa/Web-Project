@@ -85,8 +85,11 @@ jQuery(document).ready(function() {
                             {
                                 registerModal.find('.has-error').removeClass('has-error');
 
-                                $.each(receivedData.data.errorFields, function(key, value) {
+                                $.each(receivedData.data.errorFields, function(key, errorMsg) {
                                     $('#'+key).addClass('has-error');
+
+                                    console.log(errorMsg);
+                                    toastr.error(errorMsg);
                                 });
                             }
 
