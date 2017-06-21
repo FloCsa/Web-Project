@@ -5,6 +5,12 @@ $(document).ready(function () {
     $('.openOverlayToNewAccount').click(function() {
 
         $('#test2').modal('show');
+        $('#modalcontent').load('kontoHinzufuegen.php');
 
     })
+
+
+
 });
+
+
