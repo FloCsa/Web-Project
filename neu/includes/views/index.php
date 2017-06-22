@@ -14,17 +14,7 @@
 
         </div>
     </header>
-    <div class="well">
-        <button type="button" class="glyphicon glyphicon-chevron-right arrow collapsed"></button>
-        <span class="kontobox">Kontoname</span>
-        <button type="button" class="btn btn-default btn-circle" data-toggle="tooltip"
-                data-placement="auto" onclick="window.location.href='rechnungErstellen.php'"
-                title="Rechnung erstellen">
-            <span class="glyphicon glyphicon-plus"></span>
-        </button>
-        <div class="kontobetrag1">1455,12 €</div>
 
-    </div>
     <?php
 
     foreach ($this->liste as $wert):
@@ -60,7 +50,6 @@
                 <span class="glyphicon glyphicon-plus"></span>
             </button>
             <div class="kontobetrag1">432,12 €</div>
-            <div class="kontobetra2">765,23 €</div>
 
 
 
