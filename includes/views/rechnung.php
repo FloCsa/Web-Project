@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../../css/main.css">
     <title>Rechnung SmartChimp</title>
 </head>
 <body>
 <div class="btn-group">
     <button type="button" class="glyphicon glyphicon-print"></button>
-    <button type="button" class="glyphicon glyphicon-floppy-save" onclick="window.location.href='index.php'"></button>
+    <button type="button" class="glyphicon glyphicon-floppy-save" onclick="window.location.href='../../../views/index.php'"></button>
     <button type="button" class="glyphicon glyphicon-duplicate"></button>
 </div>
 <div class ="container">

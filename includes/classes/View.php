@@ -24,7 +24,7 @@ class View
 		{
 			ob_start();
 
-			include(VIEW_DIRECTORY.'/parts/header.php');
+			include(VIEW_DIRECTORY . '/parts/header.php');
 
 			$strBuffer = ob_get_contents();
 
@@ -43,7 +43,7 @@ class View
 		{
 			ob_start();
 
-			include(VIEW_DIRECTORY.'/parts/footer.php');
+			include(VIEW_DIRECTORY . '/parts/footer.php');
 
 			$strBuffer = ob_get_contents();
 

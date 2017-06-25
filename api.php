@@ -1,7 +1,7 @@
 <?php
 
 define('API_CALL', true);
-require_once(__DIR__.'/includes/initialize.php');
+require_once(__DIR__ . '/includes/initialize.php');
 
 $user = new User();
 $user->authenticate();

@@ -37,7 +37,7 @@ header::before {
   width: 100px;
   padding: 10px;
   margin-right: 20px;
-  color: #200507;
+  color: #333333;
   font-weight: bold;
   float: right;
   text-align: right;
@@ -95,11 +95,10 @@ td.icons {
   box-sizing: border-box;
 }
 
-td.number {
+td.number{
   width: 40px;
   box-sizing: border-box;
 }
-
 td.price {
   width: 100px;
   box-sizing: border-box;

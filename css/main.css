@@ -167,7 +167,7 @@ header::before {
   width: 100px;
   padding: 10px;
   margin-right: 20px;
-  color: #200507;
+  color: #333333;
   font-weight: bold;
   float: right;
   text-align: right;
@@ -237,18 +237,18 @@ td.number {
   box-sizing: border-box;
 }
 
-/* line 103, ../sass/_overview.scss */
+/* line 102, ../sass/_overview.scss */
 td.price {
   width: 100px;
   box-sizing: border-box;
 }
 
-/* line 108, ../sass/_overview.scss */
+/* line 107, ../sass/_overview.scss */
 button.arrow {
   border: none;
   background-color: transparent;
 }
-/* line 112, ../sass/_overview.scss */
+/* line 111, ../sass/_overview.scss */
 button.arrow::before {
   transform: rotate(90deg);
   transition-property: transform;
@@ -257,7 +257,7 @@ button.arrow::before {
   transition-timing-function: linear;
   display: inline-block;
 }
-/* line 122, ../sass/_overview.scss */
+/* line 121, ../sass/_overview.scss */
 button.arrow.collapsed::before {
   transform: rotate(0deg);
 }

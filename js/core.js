@@ -6,5 +6,11 @@ $(document).ready(function () {
 
         $('#test2').modal('show');
 
+
     })
+
+
+
 });
+
+
