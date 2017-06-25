@@ -40,10 +40,10 @@ echo $this->header;
                     </div>
                     <div class="Buttons">
                         <button type="button" class="btn btn-lg btn-info"
-                                onclick="window.location.href='index.php'">Abbrechen
+                                onclick="window.location.href='index.html'">Abbrechen
                         </button>
                         <button type="button" class="btn btn-lg btn-info"
-                                onclick="window.location.href='index.php'">Speichern
+                                onclick="window.location.href='index.html'">Speichern
                         </button>
                     </div>
                 </div>
