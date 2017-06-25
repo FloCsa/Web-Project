@@ -13,7 +13,7 @@
 <body>
 <div class="btn-group">
     <button type="button" class="glyphicon glyphicon-print"></button>
-    <button type="button" class="glyphicon glyphicon-floppy-save" onclick="window.location.href='index.php'"></button>
+    <button type="button" class="glyphicon glyphicon-floppy-save"></button>
     <button type="button" class="glyphicon glyphicon-duplicate"></button>
 </div>
 <div class ="container">

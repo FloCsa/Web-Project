@@ -39,11 +39,10 @@ echo $this->header;
                         <input type="text" name="stnummer" placeholder="Steuer ID" class="form-control">
                     </div>
                     <div class="Buttons">
-                        <button type="button" class="btn btn-lg btn-info"
-                                onclick="window.location.href='index.php'">Abbrechen
+                        <button type="button" class="btn btn-lg btn-info">Abbrechen
                         </button>
                         <button type="button" class="btn btn-lg btn-info"
-                                onclick="window.location.href='index.php'">Speichern
+                        >Speichern
                         </button>
                     </div>
                 </div>

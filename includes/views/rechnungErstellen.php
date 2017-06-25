@@ -49,8 +49,8 @@ echo $this->header;
                         </div>
                     </div>
                     <div class="Buttons">
-                        <button type="button" class="btn btn-lg btn-info" onclick="window.location.href='../../../views/index.php'">Abbrechen</button>
-                        <button type="button" class="btn btn-lg btn-info" onclick="window.location.href='../../../views/index.php'">Speichern</button>
+                        <button type="button" class="btn btn-lg btn-info">Abbrechen</button>
+                        <button type="button" class="btn btn-lg btn-info">Speichern</button>
                     </div>
                 </div>
             </form>
