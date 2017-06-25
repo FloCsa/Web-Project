@@ -13,8 +13,6 @@ class RegistrierenController extends Controller
 	{
 		$this->view->title = "Registrieren";
 
-		$this->view->sepp = "Test";
-
 		$this->view->addresses = AddressModel::getAddressesByUserId($this->user->id);
 	}
 
