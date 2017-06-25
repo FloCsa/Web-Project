@@ -38,14 +38,6 @@ echo $this->header;
                     <label>Steuer ID</label>
                     <input type="text" placeholder="Steuer ID" class="form-control">
                 </div>
-                <div class="Buttons">
-                    <button type="button" class="btn btn-lg btn-info"
-                            onclick="window.location.href='index.php'">Abbrechen
-                    </button>
-                    <button type="button" class="btn btn-lg btn-info"
-                            onclick="window.location.href='index.php'">Speichern
-                    </button>
-                </div>
             </div>
         </form>
     </div>
