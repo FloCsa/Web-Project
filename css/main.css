@@ -262,6 +262,13 @@ button.arrow.collapsed::before {
   transform: rotate(0deg);
 }
 
+/* line 126, ../sass/_overview.scss */
+.user {
+  color: #b4b4ae;
+  font-size: 12px;
+  font-style: italic;
+}
+
 /* line 1, ../sass/_Login.scss */
 #regContainer {
   margin-top: 3%;
