@@ -49,7 +49,7 @@
                         <h4 class="modal-title" id="exampleModalLabel">Rechnung erstellen</h4>
                     </div>
                     <div class="modal-body">
-                        Verweis auf rechnungErstellen.php
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
@@ -100,8 +100,11 @@
             <a href="">link 3</a>
         </div>
     </div>
-
-
+    <div>
+        <a href="logout" class="btn btn-info btn-lg">
+            <span class="glyphicon glyphicon-log-out"></span> Abmelden
+        </a>
+    </div>
 </div>
 <?php
     echo $this->footer;
