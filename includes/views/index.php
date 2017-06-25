@@ -22,8 +22,7 @@
 
         //var_dump($wert);
         ?>
-
-
+        <!--Modal test2 Konto hinzufügen mit modal-body referenz showcal um kontoHinzufuegen.php anzuzeigen -->
         <div class="modal fade container" id="test2" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -32,7 +31,7 @@
                         <h4 class="modal-title" id="exampleModalLabel">Konto hinzufügen</h4>
                     </div>
                     <div class="modal-body">
-                        nix
+                        <div id="showcal"></div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
@@ -41,12 +40,31 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal fade container" id="modal2" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Rechnung erstellen</h4>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
+                        <button type="button" class="btn btn-primary">Speichern</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="well">
             <button type="button" class="glyphicon glyphicon-chevron-right arrow collapsed" data-toggle="collapse"
                     data-target="#<?php echo $wert->kontoid; ?>"></button>
             <span class="kontobox"><?php echo $wert->kontoname; ?></span>
-            <button type="button" class="btn btn-default btn-circle" data-toggle="tooltip"
-                    data-placement="auto" onclick="window.location.href='rechnungErstellen.php'"
+            <button type="button" class="btn btn-default btn-circle openOverlayToNewBill" data-toggle="tooltip"
+                    data-placement="auto"
                     title="Rechnung erstellen">
                 <span class="glyphicon glyphicon-plus"></span>
             </button>
@@ -82,8 +100,11 @@
             <a href="">link 3</a>
         </div>
     </div>
-
-
+    <div>
+        <a href="logout" class="btn btn-info btn-lg">
+            <span class="glyphicon glyphicon-log-out"></span> Abmelden
+        </a>
+    </div>
 </div>
 <?php
     echo $this->footer;
