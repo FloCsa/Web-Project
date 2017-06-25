@@ -40,7 +40,6 @@ echo $this->header;
 
     </div>
 </div>
-<?php echo $this->sepp; ?>
 
 
 <div class="modal fade" tabindex="-1" role="dialog" id="editModal">
