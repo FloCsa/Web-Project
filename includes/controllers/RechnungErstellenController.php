@@ -1,8 +1,6 @@
 <?php
 
-/**
- * @author Daniel Hoover <https://github.com/danielhoover>
- */
+
 class RechnungErstellenController extends Controller
 {
 	protected $viewFileName = "rechnungErstellen"; //this will be the View that gets the data...

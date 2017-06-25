@@ -1,8 +1,5 @@
 <?php
 
-/**
- * @author Daniel Hoover <https://github.com/danielhoover>
- */
 class KontoHinzufController extends Controller
 {
 	protected $viewFileName = "kontoHinzufuegen"; //this will be the View that gets the data...
