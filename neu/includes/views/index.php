@@ -49,7 +49,7 @@
                     title="Rechnung erstellen">
                 <span class="glyphicon glyphicon-plus"></span>
             </button>
-            <div class="kontobetrag1">432,12 €</div>
+            <div class="kontobetrag1"><?php foreach($wert->summen as $summe){ echo $summe->summe; }?> €</div>
 
 
 
@@ -64,8 +64,8 @@
                                 class="glyphicon glyphicon-trash"></span></td>
                     <td class ="number"><?php echo $rechnung->rnnr; ?></td>
                     <td class="content"><?php echo $rechnung->beschreibung; ?></td>
-                    <td class="price"><?php echo $rechnung->betrag; ?></td>
-                    <td class="price"><?php echo $rechnung->betrag; ?></td>
+                    <td class="price"><?php echo $rechnung->betrag; ?> €</td>
+
                 </tr>
                 <?php endforeach; ?>
                 </tbody>

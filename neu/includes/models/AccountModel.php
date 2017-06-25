@@ -24,6 +24,18 @@ class AccountModel
 
             $konto->rechnungen = $rechnungen;
 
+            $sql = "SELECT SUM(betrag) AS summe FROM rechnung WHERE kontoid=".$konto->kontoid;
+            $result3 = $db->query($sql);
+
+            $summen = array();
+
+            while($betrag = $db->fetchObject($result3))
+            {
+                $summen[] = $betrag;
+            }
+
+            $konto->summen = $summen;
+
           $liste[] = $konto;
         }
 
