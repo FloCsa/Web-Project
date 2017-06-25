@@ -129,6 +129,11 @@ body.withSpace {
 }
 
 /* line 5, ../sass/_overview.scss */
+.floatL {
+  float: left;
+}
+
+/* line 9, ../sass/_overview.scss */
 header::before {
   content: '';
   display: block;
@@ -138,14 +143,14 @@ header::before {
   margin-top: 0px;
 }
 
-/* line 14, ../sass/_overview.scss */
+/* line 18, ../sass/_overview.scss */
 .well {
   margin-bottom: 0px;
   padding: 5px;
   background-image: linear-gradient(to bottom, #e8e8e8 0, #f5f5f5 100%);
 }
 
-/* line 20, ../sass/_overview.scss */
+/* line 24, ../sass/_overview.scss */
 .kontobox {
   border-left: 1px solid #8e8e8e;
   border-right: 1px solid #8e8e8e;
@@ -159,7 +164,7 @@ header::before {
   text-align: center;
 }
 
-/* line 33, ../sass/_overview.scss */
+/* line 37, ../sass/_overview.scss */
 .kontobetrag1 {
   display: inline-block;
   box-sizing: border-box;
@@ -173,7 +178,7 @@ header::before {
   text-align: right;
 }
 
-/* line 47, ../sass/_overview.scss */
+/* line 51, ../sass/_overview.scss */
 .kontobetra2 {
   display: inline-block;
   box-sizing: border-box;
@@ -188,19 +193,19 @@ header::before {
   text-align: right;
 }
 
-/* line 61, ../sass/_overview.scss */
+/* line 65, ../sass/_overview.scss */
 .glyphicon.glyphicon-pencil {
   font-size: 10px;
   border: 1px solid #969696;
   padding: 2px;
   border-radius: 4px;
 }
-/* line 66, ../sass/_overview.scss */
+/* line 70, ../sass/_overview.scss */
 .glyphicon.glyphicon-pencil:hover {
   border: 1px solid black;
 }
 
-/* line 71, ../sass/_overview.scss */
+/* line 75, ../sass/_overview.scss */
 .glyphicon.glyphicon-trash {
   font-size: 10px;
   border: 1px solid #969696;
@@ -208,47 +213,47 @@ header::before {
   border-radius: 4px;
   margin-left: 2px;
 }
-/* line 77, ../sass/_overview.scss */
+/* line 81, ../sass/_overview.scss */
 .glyphicon.glyphicon-trash:hover {
   border: 1px solid black;
 }
 
-/* line 82, ../sass/_overview.scss */
+/* line 86, ../sass/_overview.scss */
 .glyphicon.glyphicon-chevron-right {
   padding: 10px;
 }
 
-/* line 87, ../sass/_overview.scss */
+/* line 91, ../sass/_overview.scss */
 td.content {
   width: 250px;
   height: 20px;
   box-sizing: border-box;
 }
 
-/* line 93, ../sass/_overview.scss */
+/* line 97, ../sass/_overview.scss */
 td.icons {
   width: 60px;
   box-sizing: border-box;
 }
 
-/* line 98, ../sass/_overview.scss */
+/* line 102, ../sass/_overview.scss */
 td.number {
   width: 40px;
   box-sizing: border-box;
 }
 
-/* line 102, ../sass/_overview.scss */
+/* line 106, ../sass/_overview.scss */
 td.price {
   width: 100px;
   box-sizing: border-box;
 }
 
-/* line 107, ../sass/_overview.scss */
+/* line 111, ../sass/_overview.scss */
 button.arrow {
   border: none;
   background-color: transparent;
 }
-/* line 111, ../sass/_overview.scss */
+/* line 115, ../sass/_overview.scss */
 button.arrow::before {
   transform: rotate(90deg);
   transition-property: transform;
@@ -257,16 +262,23 @@ button.arrow::before {
   transition-timing-function: linear;
   display: inline-block;
 }
-/* line 121, ../sass/_overview.scss */
+/* line 125, ../sass/_overview.scss */
 button.arrow.collapsed::before {
   transform: rotate(0deg);
 }
 
-/* line 126, ../sass/_overview.scss */
+/* line 130, ../sass/_overview.scss */
 .user {
   color: #b4b4ae;
   font-size: 12px;
   font-style: italic;
+}
+
+/* line 136, ../sass/_overview.scss */
+.btn-lg {
+  padding: 2px;
+  font-size: 14px;
+  border-radius: 4px;
 }
 
 /* line 1, ../sass/_Login.scss */

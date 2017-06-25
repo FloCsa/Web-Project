@@ -2,6 +2,10 @@
   float: right;
 }
 
+.floatL {
+  float: left;
+}
+
 header::before {
   content: '';
   display: block;
@@ -127,4 +131,11 @@ button.arrow {
   color: #b4b4ae;
   font-size: 12px;
   font-style: italic;
+}
+
+.btn-lg {
+  padding: 2px;
+  font-size: 14px;
+  border-radius: 4px;
+
 }

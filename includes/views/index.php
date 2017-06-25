@@ -95,15 +95,15 @@
 
     <div class="panel panel-default">
         <div class="panel-footer" style="text-align: right">
+            <div class="floatL">
+                <a href="logout" class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-log-out"></span> Abmelden
+                </a>
+            </div>
             <a href="" style="padding-right: 4px; border-right: 1px solid #c9c9c9">link 1</a>
             <a href="" style="padding-right: 4px; border-right: 1px solid #c9c9c9">link 2</a>
             <a href="">link 3</a>
         </div>
-    </div>
-    <div>
-        <a href="logout" class="btn btn-info btn-lg">
-            <span class="glyphicon glyphicon-log-out"></span> Abmelden
-        </a>
     </div>
 </div>
 <?php
