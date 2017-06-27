@@ -22,48 +22,13 @@
 
         //var_dump($wert);
         ?>
-        <!--Modal test2 Konto hinzufügen mit modal-body referenz showcal um kontoHinzufuegen.php anzuzeigen -->
-        <div class="modal fade container" id="test2" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="exampleModalLabel">Konto hinzufügen</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div id="showcal"></div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
-                        <button type="button" class="btn btn-primary">Speichern</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="modal fade container" id="modal2" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="exampleModalLabel">Rechnung erstellen</h4>
-                    </div>
-                    <div class="modal-body">
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
-                        <button type="button" class="btn btn-primary">Speichern</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="well">
             <button type="button" class="glyphicon glyphicon-chevron-right arrow collapsed" data-toggle="collapse"
                     data-target="#<?php echo $wert->kontoid; ?>"></button>
             <span class="kontobox"><?php echo $wert->kontoname; ?></span>
-            <button type="button" class="btn btn-default btn-circle openOverlayToNewBill" data-toggle="tooltip"
+            <button type="button" class="btn btn-default btn-circle newBill" data-toggle="tooltip"
                     data-placement="auto"
                     title="Rechnung erstellen">
                 <span class="glyphicon glyphicon-plus"></span>
@@ -79,7 +44,7 @@
                 <tbody>
                 <?php foreach($wert->rechnungen as $rechnung): ?>
                 <tr>
-                    <td class="icons"><span class="glyphicon glyphicon-pencil"></span><span
+                    <td class="icons"><span class="glyphicon glyphicon-pencil editBill" data-id="<?php echo $rechnung->rnnr; ?>"></span><span
                                 class="glyphicon glyphicon-trash"></span></td>
                     <td class ="number"><?php echo $rechnung->rnnr; ?></td>
                     <td class="content"><?php echo $rechnung->beschreibung; ?></td>
@@ -106,6 +71,44 @@
         </div>
     </div>
 </div>
+
+
+    <!--Modal test2 Konto hinzufügen mit modal-body referenz showcal um kontoHinzufuegen.php anzuzeigen -->
+    <div class="modal fade container" id="test2" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">Konto hinzufügen</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="showcal"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
+                    <button type="button" class="btn btn-primary">Speichern</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade container" id="modal2" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">Rechnung erstellen</h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
+                    <button type="button" class="btn btn-primary">Speichern</button>
+                </div>
+            </div>
+        </div>
+    </div>
 <?php
     echo $this->footer;
 ?>

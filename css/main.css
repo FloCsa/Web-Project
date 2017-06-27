@@ -249,11 +249,16 @@ td.price {
 }
 
 /* line 111, ../sass/_overview.scss */
+.editBill {
+  cursor: pointer;
+}
+
+/* line 115, ../sass/_overview.scss */
 button.arrow {
   border: none;
   background-color: transparent;
 }
-/* line 115, ../sass/_overview.scss */
+/* line 119, ../sass/_overview.scss */
 button.arrow::before {
   transform: rotate(90deg);
   transition-property: transform;
@@ -262,19 +267,19 @@ button.arrow::before {
   transition-timing-function: linear;
   display: inline-block;
 }
-/* line 125, ../sass/_overview.scss */
+/* line 129, ../sass/_overview.scss */
 button.arrow.collapsed::before {
   transform: rotate(0deg);
 }
 
-/* line 130, ../sass/_overview.scss */
+/* line 134, ../sass/_overview.scss */
 .user {
   color: #b4b4ae;
   font-size: 12px;
   font-style: italic;
 }
 
-/* line 136, ../sass/_overview.scss */
+/* line 140, ../sass/_overview.scss */
 .btn-lg {
   padding: 2px;
   font-size: 14px;
