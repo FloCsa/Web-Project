@@ -4,46 +4,43 @@ echo $this->header;
 <div class="container">
     <div class="col-lg-12 well">
         <div class="row">
-            <form>
+            <form id="kontoHinzufuegen-form" action="kontoHinzufuegen" method="post" role="form">
                 <div class="col-sm-12">
                     <div class="form-group">
-                        <label>Kontoname</label>
-                        <input type="text" name="kontoname" placeholder="Kontoname" class="form-control">
+                        <label for="kontoname">Kontoname</label>
+                        <input id="kontoname" type="text" name="kontoname" placeholder="Kontoname" class="form-control">
                     </div>
                     <div class="row">
                         <div class="col-sm-6 form-group">
-                            <label>Straße</label>
-                            <input type="text" name="straße" placeholder="Straße" class="form-control">
+                            <label for="straße">Straße</label>
+                            <input id="straße" type="text" name="strasse" placeholder="Straße" class="form-control">
                         </div>
                         <div class="col-sm-6 form-group">
-                            <label>Hausnummer</label>
-                            <input type="text" name="nummer" placeholder="Hausnummer" class="form-control">
+                            <label for="hausnummer">Hausnummer</label>
+                            <input id="hausnummer" type="text" name="nummer" placeholder="Hausnummer" class="form-control">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6 form-group">
-                            <label>PLZ</label>
-                            <input type="text" name="plz" placeholder="PLZ" class="form-control">
+                            <label for="plz">PLZ</label>
+                            <input id="plz" type="text" name="plz" placeholder="PLZ" class="form-control">
                         </div>
                         <div class="col-sm-6 form-group">
-                            <label>Ort</label>
-                            <input type="text" name="ort" placeholder="Ort" class="form-control">
+                            <label for="ort">Ort</label>
+                            <input id="ort" type="text" name="ort" placeholder="Ort" class="form-control">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>E-Mail</label>
-                        <input type="text" name="email" placeholder="E-Mail" class="form-control">
+                        <label for="email">E-Mail</label>
+                        <input id="email" type="text" name="email" placeholder="E-Mail" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label>Steuer ID</label>
-                        <input type="text" name="stnummer" placeholder="Steuer ID" class="form-control">
+                        <label for="stnummer">Steuer ID</label>
+                        <input id="stnummer" type="text" name="stnummer" placeholder="Steuer ID" class="form-control">
                     </div>
                     <div class="Buttons">
-                        <button type="button" class="btn btn-lg btn-info">Abbrechen
-                        </button>
-                        <button type="button" class="btn btn-lg btn-info"
-                        >Speichern
-                        </button>
+                        <input type="reset" class="btn btn-lg btn-info" value="Abbrechen">
+                        <input type="submit" class="btn btn-lg btn-info" value="Speichern">
                     </div>
                 </div>
             </form>

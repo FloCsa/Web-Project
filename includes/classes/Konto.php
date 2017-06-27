@@ -14,14 +14,14 @@ class Konto
         $db = new Database();
         $kontoname = $db->escapeString($data['kontoname']);
         $straße = $db->escapeString($data['straße']);
-        $nummer = $db->escapeString($data['nummer']);
+        $nummer = $db->escapeString($data['hausnummer']);
         $plz = $db->escapeString($data['plz']);
         $ort = $db->escapeString($data['ort']);
         $stnummer = $db->escapeString($data['stnummer']);
         $email = $db->escapeString($data['email']);
 
 
-        $sql = "INSERT INTO `konto`(`kontoname`,`straße`,`nummer`,`plz`,`ort`,`stnummer`,`stnummer`) VALUES('".$kontoname."','".$straße."','".$nummer."','".$plz."','".$ort."','".$stnummer."','".$email."')";
+        $sql = "INSERT INTO `konto`(`kontoname`,`straße`,`nummer`,`plz`,`ort`,`stnummer`,`email`) VALUES('".$kontoname."','".$straße."','".$nummer."','".$plz."','".$ort."','".$stnummer."','".$email."')";
         $db->query($sql);
     }
 
