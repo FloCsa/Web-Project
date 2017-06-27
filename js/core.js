@@ -63,12 +63,14 @@ $(document).ready(function () {
     $('.deleteBill').click(function () {
         var billId = $(this).attr('data-id');
 
+
         $.ajax({
-            url: "klugeDatei.php",
+            url: 'klugeDatei.php',
             method: "post",
-            data: billId,
-            success: function (receivedData) {
-                console.log(receivedData);
+            data: {id: billId},
+            success: function (dataReceived) {
+                console.log(dataReceived);
+
             }
         });
 

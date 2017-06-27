@@ -2,14 +2,12 @@
 
 require_once('includes/initialize.php');
 
-if(!empty($_POST) && isset($_POST['cmd']) && $_POST['cmd'] == 'getBillView')
-{
+if (!empty($_POST) && isset($_POST['cmd']) && $_POST['cmd'] == 'getBillView') {
     //eine logik die mir den view holt
     $view = new View('billForm', 'billForm');
 
     $data = array();
-    if(isset($_POST['id']))
-    {
+    if (isset($_POST['id'])) {
         $id = $_POST['id'];
         //dir mir die daten aus der datenbank holt#
         $data = BillModel::getByPk($id);
@@ -28,6 +26,23 @@ if(!empty($_POST) && isset($_POST['cmd']) && $_POST['cmd'] == 'getBillView')
 
     echo json_encode(array('view' => $view->parse()));
 }
+
+if (!empty($_POST) && isset($_POST['id'])) {
+    //eine logik die mir den view holt
+
+
+    $id = $_POST['id'];
+    //dir mir die daten aus der datenbank holt#
+    $data = BillModel::deleteBill($id);
+
+
+    //die die daten an den view übergibt
+
+    //die mir den view so zurückgibt, dass jquery was damit anfangen kann
+
+    echo $data;
+}
+
 
 
 
