@@ -45,7 +45,7 @@
                 <?php foreach($wert->rechnungen as $rechnung): ?>
                 <tr>
                     <td class="icons"><span class="glyphicon glyphicon-pencil editBill" data-id="<?php echo $rechnung->rnnr; ?>"></span><span
-                                class="glyphicon glyphicon-trash"></span></td>
+                                class="glyphicon glyphicon-trash deleteBill"></span></td>
                     <td class ="number"><?php echo $rechnung->rnnr; ?></td>
                     <td class="content"><?php echo $rechnung->beschreibung; ?></td>
                     <td class="price"><?php echo $rechnung->betrag; ?> €</td>
@@ -84,31 +84,11 @@
                 <div class="modal-body">
                     <div id="showcal"></div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
-                    <button type="button" class="btn btn-primary">Speichern</button>
-                </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade container" id="modal2" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="exampleModalLabel">Rechnung erstellen</h4>
-                </div>
-                <div class="modal-body">
 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
-                    <button type="button" class="btn btn-primary">Speichern</button>
-                </div>
-            </div>
-        </div>
-    </div>
 <?php
     echo $this->footer;
 ?>

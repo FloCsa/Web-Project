@@ -254,11 +254,16 @@ td.price {
 }
 
 /* line 115, ../sass/_overview.scss */
+.deleteBill {
+  cursor: pointer;
+}
+
+/* line 119, ../sass/_overview.scss */
 button.arrow {
   border: none;
   background-color: transparent;
 }
-/* line 119, ../sass/_overview.scss */
+/* line 123, ../sass/_overview.scss */
 button.arrow::before {
   transform: rotate(90deg);
   transition-property: transform;
@@ -267,19 +272,19 @@ button.arrow::before {
   transition-timing-function: linear;
   display: inline-block;
 }
-/* line 129, ../sass/_overview.scss */
+/* line 133, ../sass/_overview.scss */
 button.arrow.collapsed::before {
   transform: rotate(0deg);
 }
 
-/* line 134, ../sass/_overview.scss */
+/* line 138, ../sass/_overview.scss */
 .user {
   color: #b4b4ae;
   font-size: 12px;
   font-style: italic;
 }
 
-/* line 140, ../sass/_overview.scss */
+/* line 144, ../sass/_overview.scss */
 .btn-lg {
   padding: 2px;
   font-size: 14px;
