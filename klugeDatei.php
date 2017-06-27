@@ -28,3 +28,6 @@ if(!empty($_POST) && isset($_POST['cmd']) && $_POST['cmd'] == 'getBillView')
 
     echo json_encode(array('view' => $view->parse()));
 }
+
+
+

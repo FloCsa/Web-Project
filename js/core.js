@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
 
 
@@ -58,6 +57,22 @@ $(document).ready(function () {
             }
         });
         //console.log($(this).attr('data-id'));
+    });
+
+    // zum Löschen von Rechnungen
+    $('.deleteBill').click(function () {
+        var billId = $(this).attr('data-id');
+
+        $.ajax({
+            url: "klugeDatei.php",
+            method: "post",
+            data: billId,
+            success: function (receivedData) {
+                console.log(receivedData);
+            }
+        });
+
+
     });
 
 

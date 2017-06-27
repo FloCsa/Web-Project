@@ -17,4 +17,16 @@ class BillModel
 
         return $db->fetchAssoc($result);
     }
+
+    public static function deleteBill($id)
+    {
+        $message = "Rechnung".$id."wurde gelöscht!";
+
+        $db = new Database();
+        $sql = "DELETE FROM rechnung WHERE rnnr=".$db->escapeString($id);
+
+        $db->query($sql);
+
+        return $message;
+    }
 }
