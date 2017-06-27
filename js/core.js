@@ -1,15 +1,28 @@
+
 $(document).ready(function () {
+
 
     $('.newAccount').click(function () {
 
+        dataToSend = {cmd: "getKontoHinzufuegen"};
+
+        $.ajax({
+            url: 'klugeDateiKonto.php',
+            method: "post",
+            data: dataToSend,
+            success: function (dataReceived) {
+                //console.log(dataReceived);
+
+                var myModal = $('#test2');
+
+                myModal.find('.modal-body').html(dataReceived.view);
+
+                $('#test2').modal('show');
+
+            }
+        });
 
     });
-
-
-});
-
-
-$(document).ready(function () {
 
 
     $('.editBill, .newBill').click(function () {

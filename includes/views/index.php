@@ -73,7 +73,7 @@
 </div>
 
 
-    <!--Modal test2 Konto hinzufügen mit modal-body referenz showcal um kontoHinzufuegen.php anzuzeigen -->
+    <!--Modal test2 -->
     <div class="modal fade container" id="test2" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -82,7 +82,6 @@
                     <h4 class="modal-title" id="exampleModalLabel">Konto hinzufügen</h4>
                 </div>
                 <div class="modal-body">
-                    <div id="showcal"></div>
                 </div>
             </div>
         </div>
