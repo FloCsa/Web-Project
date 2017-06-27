@@ -7,7 +7,7 @@
             <h1>SmartChimp
                 <small style="font-size: 12px;">logged in as</small>
                 <span class="user"><?php echo $this->username; ?></span>
-                <button type="button" class="btn btn-default btn-circle floatR openOverlayToNewAccount" title="Konto erstellen">
+                <button type="button" class="btn btn-default btn-circle floatR newAccount" title="Konto erstellen">
                     <span class="glyphicon glyphicon-plus"></span>
                 </button>
                 <span style="font-size: 15px; float: right; margin: 10px;">Neues Konto</span>

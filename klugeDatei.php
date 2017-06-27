@@ -26,5 +26,5 @@ if(!empty($_POST) && isset($_POST['cmd']) && $_POST['cmd'] == 'getBillView')
     // set X-UA-Compatible for IE9
     header('X-UA-Compatible: IE=edge, chrome=1');
 
-    echo json_encode(array('view' => $view->parse(), 'arnold' => 'schwarzenegger'));
+    echo json_encode(array('view' => $view->parse()));
 }
