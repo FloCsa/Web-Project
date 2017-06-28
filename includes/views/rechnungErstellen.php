@@ -1,6 +1,5 @@
 
 <div class="container">
-    <h1 class="well">Rechnung erstellen</h1>
     <div class="col-lg-12 well">
         <div class="row">
             <form>

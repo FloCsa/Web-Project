@@ -1,9 +1,4 @@
 <div class="container">
-    <?php if($this->rnnr): ?>
-        <h1 class="well">Rechnung Nummer <?php echo $this->rnnr; ?> bearbeiten</h1>
-    <?php else: ?>
-        <h1 class="well">Rechnung erstellen</h1>
-    <?php endif; ?>
     <div class="col-lg-12 well">
         <div class="row">
             <form>
