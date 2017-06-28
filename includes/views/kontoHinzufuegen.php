@@ -1,6 +1,4 @@
-<?php
-echo $this->header;
-?>
+
 <div class="container">
     <div class="col-lg-12 well">
         <div class="row">

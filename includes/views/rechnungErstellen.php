@@ -1,6 +1,3 @@
-<?php
-echo $this->header;
-?>
 
 <div class="container">
     <h1 class="well">Rechnung erstellen</h1>

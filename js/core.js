@@ -6,7 +6,7 @@ $(document).ready(function () {
         dataToSend = {cmd: "getKontoHinzufuegen"};
 
         $.ajax({
-            url: 'klugeDateiKonto.php',
+            url: 'klugeDatei.php',
             method: "post",
             data: dataToSend,
             success: function (dataReceived) {
@@ -27,11 +27,11 @@ $(document).ready(function () {
     $('.editBill, .newBill').click(function () {
         var billId = $(this).attr('data-id');
 
-        dataToSend = {cmd: "getBillView"};
+        dataToSend = [{name: "cmd", value: "getBillView"}];
 
         //if there is an id given...
         if (typeof billId !== 'undefined') {
-            dataToSend.push({id: billId});
+            dataToSend.push({name: "id", value: billId});
         }
 
         $.ajax({
