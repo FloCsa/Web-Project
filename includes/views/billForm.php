@@ -1,4 +1,4 @@
-<div class="container">
+<div class="">
     <div class="col-lg-12 well">
         <div class="row">
             <form>
