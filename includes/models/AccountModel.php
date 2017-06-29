@@ -59,5 +59,4 @@ class AccountModel
         $db->query($sql);
     }
 
-
 }
