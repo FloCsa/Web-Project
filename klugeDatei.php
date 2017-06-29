@@ -17,6 +17,7 @@ if (!empty($_POST) && isset($_POST['cmd']) && $_POST['cmd'] == 'getBillView') {
     //die die daten an den view übergibt
     $view->setData($data);
 
+
     //die mir den view so zurückgibt, dass jquery was damit anfangen kann
     // set the status
     header('HTTP/1.1 200 OK');
@@ -68,6 +69,14 @@ if (!empty($_POST) && isset($_POST['id'])) {
     echo $data;
     exit();
 }
+
+if (!empty($_POST) && isset($_POST['id'])) {
+    $id = $_POST['id'];
+
+    $data = BillModel::deleteBill($id);
+}
+
+
 
 
 

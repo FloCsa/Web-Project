@@ -45,7 +45,7 @@
                 <?php foreach($wert->rechnungen as $rechnung): ?>
                 <tr>
                     <td class="icons"><span class="glyphicon glyphicon-pencil editBill" data-id="<?php echo $rechnung->rnnr; ?>"></span><span
-                                class="glyphicon glyphicon-trash deleteBill"></span></td>
+                                class="glyphicon glyphicon-trash deleteBill" data-id="<?php echo $rechnung->rnnr; ?>"></span></td>
                     <td class ="number"><?php echo $rechnung->rnnr; ?></td>
                     <td class="content"><?php echo $rechnung->beschreibung; ?></td>
                     <td class="price"><?php echo $rechnung->betrag; ?> €</td>

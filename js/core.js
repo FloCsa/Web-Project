@@ -70,6 +70,7 @@ $(document).ready(function () {
             data: {id: billId},
             success: function (dataReceived) {
                 console.log(dataReceived);
+                location.reload();
 
             }
         });
