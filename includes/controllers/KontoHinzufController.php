@@ -12,11 +12,22 @@ class KontoHinzufController extends Controller
 		$this->view->title = "Konto hinzufuegen";
 		$this->view->username = $this->user->username;
 
-
+/*
 		$this->view->neuesKonto = array("kontoname"=>$_POST['kontoname'],"straße"=>$_POST['straße'],"hausnummer"=>$_POST['hausnummer'],
             "plz"=>$_POST['plz'], "ort"=>$_POST['ort'], "email"=>$_POST['email'], "stnummer"=>$_POST['stnummer']);
 
-        AccountModel::createAccount($this->view->neuesKonto);
+        AccountModel::createAccount($this->view->neuesKonto);*/
+
+        if (!empty($_POST)) {
+
+
+            $this->view->neuesKonto = array("kontoname"=>$_POST['kontoname'],"straße"=>$_POST['straße'],"hausnummer"=>$_POST['hausnummer'],
+                "plz"=>$_POST['plz'], "ort"=>$_POST['ort'], "email"=>$_POST['email'], "stnummer"=>$_POST['stnummer']);
+
+            AccountModel::createAccount($this->view->neuesKonto);
+
+            exit();
+        }
 	}
 
 }

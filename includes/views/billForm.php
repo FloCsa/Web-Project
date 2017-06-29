@@ -44,7 +44,7 @@
                         </div>
                     </div>
                     <div class="Buttons">
-                        <button type="button" class="btn btn-lg btn-info">Abbrechen</button>
+                        <button type="button" class="btn btn-lg btn-info" data-dismiss="modal">Abbrechen</button>
                         <button type="button" class="btn btn-lg btn-info">Speichern</button>
                     </div>
                 </div>

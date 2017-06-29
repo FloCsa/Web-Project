@@ -46,4 +46,26 @@
     </div>
 </div>
 
+<script type="text/javascript">
+    $('#kontoHinzufuegen-form').submit(function(e) {
+        e.preventDefault(); //Submit abgefangen
+
+        var urlToSendFormularTo = $(this).attr('action');
+        var variablesFromFormular = $(this).serialize(); //nice function which gets all fields from the form for us
+
+        $.ajax({
+            url: urlToSendFormularTo,
+            method: "post",
+            data: variablesFromFormular,
+            success: function(dataReceived) {
+                //check values in dataReceived to see if everything was fine
+                console.log(dataReceived);
+
+                location.reload();
+
+            }
+        });
+    });
+</script>
+
 
