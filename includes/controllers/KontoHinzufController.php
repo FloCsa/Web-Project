@@ -16,7 +16,7 @@ class KontoHinzufController extends Controller
         if (!empty($_POST)) {
 
 
-            $this->view->neuesKonto = array("kontoname"=>$_POST['kontoname'],"straße"=>$_POST['straße'],"hausnummer"=>$_POST['hausnummer'],
+            $this->view->neuesKonto = array("kontoname"=>$_POST['kontoname'],"straße"=>$_POST['straße'],"nummer"=>$_POST['nummer'],
                 "plz"=>$_POST['plz'], "ort"=>$_POST['ort'], "email"=>$_POST['email'], "stnummer"=>$_POST['stnummer']);
 
             AccountModel::createAccount($this->view->neuesKonto);

@@ -48,7 +48,7 @@ class AccountModel
         $db = new Database();
         $kontoname = $db->escapeString($data['kontoname']);
         $straße = $db->escapeString($data['straße']);
-        $nummer = $db->escapeString($data['hausnummer']);
+        $nummer = $db->escapeString($data['nummer']);
         $plz = $db->escapeString($data['plz']);
         $ort = $db->escapeString($data['ort']);
         $stnummer = $db->escapeString($data['stnummer']);

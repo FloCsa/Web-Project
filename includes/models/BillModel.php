@@ -48,5 +48,15 @@ class BillModel
         $db->query($sql);
     }
 
+    public static function saveBill($data)
+    {
+        $db = new Database();
+
+        $sql = "UPDATE rechnung SET vname='".$db->escapeString($data['vname'])."',lastname='".$db->escapeString($data['lastname'])."',street='".$db->escapeString($data['street'])."',zip='".$db->escapeString($data['zip'])."',city='".$db->escapeString($data['city'])."' WHERE id=".intval($data['id']);
+        $db->query($sql);
+
+        return (object) $data;
+    }
+
 
 }

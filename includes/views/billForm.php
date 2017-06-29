@@ -6,55 +6,55 @@
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <label for="vname">Vorname</label>
-                            <input type="text" placeholder="Vorname" class="form-control" id="vname"
+                            <input type="text" placeholder="Vorname" name="vname" class="form-control" id="vname"
                                    value="<?php echo $this->vname; ?>">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="nname">Nachname</label>
-                            <input type="text" placeholder="Nachname" class="form-control" id="nname"
+                            <input type="text" placeholder="Nachname" name="nname" class="form-control" id="nname"
                                    value="<?php echo $this->nname; ?>">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <label for="straße">Straße</label>
-                            <input type="text" placeholder="Straße" class="form-control" id="straße"
+                            <input type="text" placeholder="Straße" name="straße" class="form-control" id="straße"
                                    value="<?php echo $this->straße; ?>">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="nummer">Hausnummer</label>
-                            <input type="text" placeholder="Hausnummer" class="form-control" id="nummer"
+                            <input type="text" placeholder="Hausnummer" name="nummer" class="form-control" id="nummer"
                                    value="<?php echo $this->nummer; ?>">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <label for="plz">PLZ</label>
-                            <input type="text" placeholder="PLZ" class="form-control" id="plz"
+                            <input type="text" placeholder="PLZ" name="plz" class="form-control" id="plz"
                                    value="<?php echo $this->plz; ?>">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="ort">Ort</label>
-                            <input type="text" placeholder="Ort" class="form-control" id="ort"
+                            <input type="text" placeholder="Ort" name="ort" class="form-control" id="ort"
                                    value="<?php echo $this->ort; ?>">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="beschreibung">Beschreibung</label>
-                        <input type="text" placeholder="Beschreibung" class="form-control" id="beschreibung"
+                        <input type="text" placeholder="Beschreibung" name="beschreibung" class="form-control" id="beschreibung"
                                value="<?php echo $this->beschreibung; ?>">
                     </div>
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <label for="betrag">Betrag</label>
-                            <input type="text" placeholder="Betrag" class="form-control" id="betrag"
+                            <input type="text" placeholder="Betrag" name="betrag" class="form-control" id="betrag"
                                    value="<?php echo $this->betrag; ?>">
                         </div>
                     </div>
 
                     <div class="form-group" style="display: none">
                         <label for="kontoid">KontoId</label>
-                        <input type="text" class="form-control" id="kontoid" value="<?php echo $this->kontoid; ?>">
+                        <input type="text" class="form-control" name="kontoid" id="kontoid" value="<?php echo $this->kontoid; ?>">
                     </div>
 
                     <div class="Buttons">

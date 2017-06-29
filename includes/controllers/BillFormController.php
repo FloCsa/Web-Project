@@ -15,7 +15,7 @@ class BillFormController extends Controller
 
         if (!empty($_POST)) {
 
-            $this->view->neueRechnung = array("vname"=>$_POST['vname'],"nname"=>$_POST['nname'],"straße"=>$_POST['straße'],
+            $this->view->changedBill = array("vname"=>$_POST['vname'],"nname"=>$_POST['nname'],"straße"=>$_POST['straße'],
                 "nummer"=>$_POST['nummer'], "plz"=>$_POST['plz'], "ort"=>$_POST['ort'], "beschreibung"=>$_POST['beschreibung'], "betrag"=>$_POST['betrag'], "kontoid"=>$_POST['kontoid']);
 
             //BillModel::createBill($this->view->neueRechnung);

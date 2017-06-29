@@ -11,11 +11,11 @@
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <label for="straße">Straße</label>
-                            <input id="straße" type="text" name="strasse" placeholder="Straße" class="form-control">
+                            <input id="straße" type="text" name="straße" placeholder="Straße" class="form-control">
                         </div>
                         <div class="col-sm-6 form-group">
-                            <label for="hausnummer">Hausnummer</label>
-                            <input id="hausnummer" type="text" name="nummer" placeholder="Hausnummer" class="form-control">
+                            <label for="nummer">Hausnummer</label>
+                            <input id="nummer" type="text" name="nummer" placeholder="Hausnummer" class="form-control">
                         </div>
                     </div>
                     <div class="row">
