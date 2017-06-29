@@ -37,7 +37,7 @@
                         <input id="stnummer" type="text" name="stnummer" placeholder="Steuer ID" class="form-control">
                     </div>
                     <div class="Buttons">
-                        <input type="reset" class="btn btn-lg btn-info" value="Abbrechen">
+                        <input type="reset" class="btn btn-lg btn-info" value="Abbrechen" data-dismiss="modal">
                         <input type="submit" class="btn btn-lg btn-info" value="Speichern">
                     </div>
                 </div>
