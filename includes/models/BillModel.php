@@ -29,4 +29,23 @@ class BillModel
 
         return $message;
     }
+
+    public static function createAccount($data)
+    {
+        $db = new Database();
+        $vname= $db->escapeString($data['vname']);
+        $nname = $db->escapeString($data['nname']);
+        $straße = $db->escapeString($data['straße']);
+        $nummer = $db->escapeString($data['nummer']);
+        $plz = $db->escapeString($data['plz']);
+        $ort = $db->escapeString($data['ort']);
+        $beschreibung = $db->escapeString($data['beschreibung']);
+        $betrag = $db->escapeString($data['betrag']);
+
+
+        $sql = "INSERT INTO `rechnung`(`vname`,`nname`,`straße`,`nummer`,`plz`,`ort`,`beschreibung`) VALUES('".$vname."','".$nname."','".$straße."','".$nummer."','".$plz."','".$ort."','".$beschreibung."','".$betrag."')";
+        $db->query($sql);
+    }
+
+
 }
