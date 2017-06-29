@@ -6,43 +6,57 @@
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <label for="vname">Vorname</label>
-                            <input type="text" placeholder="Vorname" class="form-control" id="vname" value="<?php echo $this->vname; ?>">
+                            <input type="text" placeholder="Vorname" class="form-control" id="vname"
+                                   value="<?php echo $this->vname; ?>">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="nname">Nachname</label>
-                            <input type="text" placeholder="Nachname" class="form-control" id="nname" value="<?php echo $this->nname; ?>">
+                            <input type="text" placeholder="Nachname" class="form-control" id="nname"
+                                   value="<?php echo $this->nname; ?>">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <label for="straße">Straße</label>
-                            <input type="text" placeholder="Straße" class="form-control" id="straße" value="<?php echo $this->straße; ?>">
+                            <input type="text" placeholder="Straße" class="form-control" id="straße"
+                                   value="<?php echo $this->straße; ?>">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="nummer">Hausnummer</label>
-                            <input type="text" placeholder="Hausnummer" class="form-control" id="nummer" value="<?php echo $this->nummer; ?>">
+                            <input type="text" placeholder="Hausnummer" class="form-control" id="nummer"
+                                   value="<?php echo $this->nummer; ?>">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <label for="plz">PLZ</label>
-                            <input type="text" placeholder="PLZ" class="form-control" id="plz" value="<?php echo $this->plz; ?>">
+                            <input type="text" placeholder="PLZ" class="form-control" id="plz"
+                                   value="<?php echo $this->plz; ?>">
                         </div>
                         <div class="col-sm-6 form-group">
                             <label for="ort">Ort</label>
-                            <input type="text" placeholder="Ort" class="form-control" id="ort" value="<?php echo $this->ort; ?>">
+                            <input type="text" placeholder="Ort" class="form-control" id="ort"
+                                   value="<?php echo $this->ort; ?>">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="beschreibung">Beschreibung</label>
-                        <input type="text" placeholder="Beschreibung" class="form-control" id="beschreibung" value="<?php echo $this->beschreibung; ?>">
+                        <input type="text" placeholder="Beschreibung" class="form-control" id="beschreibung"
+                               value="<?php echo $this->beschreibung; ?>">
                     </div>
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <label for="betrag">Betrag</label>
-                            <input type="text" placeholder="Betrag" class="form-control" id="betrag" value="<?php echo $this->betrag; ?>">
+                            <input type="text" placeholder="Betrag" class="form-control" id="betrag"
+                                   value="<?php echo $this->betrag; ?>">
                         </div>
                     </div>
+
+                    <div class="form-group" style="display: none">
+                        <label for="kontoid">KontoId</label>
+                        <input type="text" class="form-control" id="kontoid" value="<?php echo $this->kontoid; ?>">
+                    </div>
+
                     <div class="Buttons">
                         <input type="reset" class="btn btn-lg btn-info" value="Abbrechen" data-dismiss="modal">
                         <input type="submit" class="btn btn-lg btn-info" value="Speichern">
@@ -54,17 +68,25 @@
 </div>
 
 <script type="text/javascript">
-    $('#rechnungErstellen-form').submit(function(e) {
+
+    if ($('#kontoid').value == 'undefined'))
+    {
+        //$('#kontoid').value =
+    }
+
+    $('#rechnungErstellen-form').submit(function (e) {
         e.preventDefault(); //Submit abgefangen
+
 
         var urlToSendFormularTo = $(this).attr('action');
         var variablesFromFormular = $(this).serialize(); //nice function which gets all fields from the form for us
+
 
         $.ajax({
             url: urlToSendFormularTo,
             method: "post",
             data: variablesFromFormular,
-            success: function(dataReceived) {
+            success: function (dataReceived) {
                 //check values in dataReceived to see if everything was fine
                 console.log(dataReceived);
 
@@ -72,5 +94,6 @@
 
             }
         });
-    });
+    })
+    ;
 </script>

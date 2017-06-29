@@ -51,7 +51,7 @@ if(!empty($_POST) && isset($_POST['cmd']) && $_POST['cmd'] == 'getKontoHinzufueg
 
 
 
-// Part für Rechnungen erstellen
+// Part für Rechnungen löschen
 if (!empty($_POST) && isset($_POST['id'])) {
     //eine logik die mir den view holt
 
