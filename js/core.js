@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-
+// für Click auf Konto erstellen
     $('.newAccount').click(function () {
 
         dataToSend = {cmd: "getKontoHinzufuegen"};
@@ -23,7 +23,7 @@ $(document).ready(function () {
 
     });
 
-
+// für Click auf Rechnung erstellen oder bearbeiten
     $('.editBill, .newBill').click(function () {
         var billId = $(this).attr('data-id');
 

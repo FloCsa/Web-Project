@@ -37,7 +37,7 @@ if(!empty($_POST) && isset($_POST['cmd']) && $_POST['cmd'] == 'getKontoHinzufueg
     //eine logik die mir den view holt
     $view = new View('kontoHinzufuegen', 'kontoHinzufuegen');
 
-    //die die daten an den view übergibt
+    
     //die mir den view so zurückgibt, dass jquery was damit anfangen kann
     // set the status
     header('HTTP/1.1 200 OK');
@@ -54,17 +54,12 @@ if(!empty($_POST) && isset($_POST['cmd']) && $_POST['cmd'] == 'getKontoHinzufueg
 
 // Part für Rechnungen löschen
 if (!empty($_POST) && isset($_POST['cmd']) && $_POST['cmd'] == 'deleteBill') {
-    //eine logik die mir den view holt
 
 
     $id = $_POST['id'];
     //dir mir die daten aus der datenbank holt#
     $data = BillModel::deleteBill($id);
 
-
-    //die die daten an den view übergibt
-
-    //die mir den view so zurückgibt, dass jquery was damit anfangen kann
 
     echo $data;
     exit();

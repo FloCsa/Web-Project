@@ -13,6 +13,7 @@ class BillFormController extends Controller
 		$this->view->title = "Rechnung erstellen";
 		$this->view->username = $this->user->username;
 
+
         if (!empty($_POST)) {
 
             $this->view->editBill = array("rnnr"=>$_POST['rnnr'],"vname"=>$_POST['vname'],"nname"=>$_POST['nname'],"straße"=>$_POST['straße'],
