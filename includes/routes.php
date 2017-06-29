@@ -15,7 +15,7 @@ $route['/logout.html'] = array('controller' => 'LogoutController', 'uniqueName' 
 
 $route['/kontoHinzufuegen'] = array('controller' => 'KontoHinzufController', 'uniqueName' => 'kontoHinzufuegen');
 
-$route['/rechnungErstellen'] = array('controller' => 'RechnungErstellenController', 'uniqueName' => 'rechnungErstellen');
+$route['/billForm'] = array('controller' => 'BillFormController', 'uniqueName' => 'billForm');
 
 
 
