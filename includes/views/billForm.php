@@ -69,10 +69,10 @@
 
 <script type="text/javascript">
 
-    if ($('#kontoid').value == 'undefined'))
+    /*if ($('#kontoid').value == ''))
     {
         //$('#kontoid').value =
-    }
+    }*/
 
     $('#rechnungErstellen-form').submit(function (e) {
         e.preventDefault(); //Submit abgefangen

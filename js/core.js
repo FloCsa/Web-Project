@@ -63,11 +63,18 @@ $(document).ready(function () {
     $('.deleteBill').click(function () {
         var billId = $(this).attr('data-id');
 
+        dataToSend = [{name: "cmd", value: "deleteBill"}];
+
+        //if there is an id given...
+        if (typeof billId !== 'undefined') {
+            dataToSend.push({name: "id", value: billId});
+        }
+
 
         $.ajax({
             url: 'klugeDatei.php',
             method: "post",
-            data: {id: billId},
+            data: dataToSend,
             success: function (dataReceived) {
                 console.log(dataReceived);
                 location.reload();

@@ -53,7 +53,7 @@ if(!empty($_POST) && isset($_POST['cmd']) && $_POST['cmd'] == 'getKontoHinzufueg
 
 
 // Part für Rechnungen löschen
-if (!empty($_POST) && isset($_POST['id'])) {
+if (!empty($_POST) && isset($_POST['cmd']) && $_POST['cmd'] == 'deleteBill') {
     //eine logik die mir den view holt
 
 
@@ -69,13 +69,6 @@ if (!empty($_POST) && isset($_POST['id'])) {
     echo $data;
     exit();
 }
-
-if (!empty($_POST) && isset($_POST['id'])) {
-    $id = $_POST['id'];
-
-    $data = BillModel::deleteBill($id);
-}
-
 
 
 
