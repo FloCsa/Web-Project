@@ -1,7 +1,7 @@
 <div class="">
     <div class="col-lg-12 well">
         <div class="row">
-            <form>
+            <form id="rechnungErstellen-form" action="billForm" method="post" role="form">
                 <div class="col-sm-12">
                     <div class="row">
                         <div class="col-sm-6 form-group">
@@ -44,11 +44,33 @@
                         </div>
                     </div>
                     <div class="Buttons">
-                        <button type="button" class="btn btn-lg btn-info" data-dismiss="modal">Abbrechen</button>
-                        <button type="button" class="btn btn-lg btn-info">Speichern</button>
+                        <input type="reset" class="btn btn-lg btn-info" value="Abbrechen" data-dismiss="modal">
+                        <input type="submit" class="btn btn-lg btn-info" value="Speichern">
                     </div>
                 </div>
             </form>
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    $('#rechnungErstellen-form').submit(function(e) {
+        e.preventDefault(); //Submit abgefangen
+
+        var urlToSendFormularTo = $(this).attr('action');
+        var variablesFromFormular = $(this).serialize(); //nice function which gets all fields from the form for us
+
+        $.ajax({
+            url: urlToSendFormularTo,
+            method: "post",
+            data: variablesFromFormular,
+            success: function(dataReceived) {
+                //check values in dataReceived to see if everything was fine
+                console.log(dataReceived);
+
+                location.reload();
+
+            }
+        });
+    });
+</script>
