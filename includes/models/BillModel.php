@@ -52,10 +52,10 @@ class BillModel
     {
         $db = new Database();
 
-        $sql = "UPDATE rechnung SET vname='".$db->escapeString($data['vname'])."',lastname='".$db->escapeString($data['lastname'])."',street='".$db->escapeString($data['street'])."',zip='".$db->escapeString($data['zip'])."',city='".$db->escapeString($data['city'])."' WHERE id=".intval($data['id']);
+        $sql = "UPDATE rechnung SET vname='".$db->escapeString($data['vname'])."',nname='".$db->escapeString($data['nname'])."',straße='".$db->escapeString($data['straße'])."',nummer='".$db->escapeString($data['nummer'])."',plz='".$db->escapeString($data['plz'])."',ort='".$db->escapeString($data['ort'])."',beschreibung='".$db->escapeString($data['beschreibung'])."',betrag='".$db->escapeString($data['betrag'])."',kontoid='".$db->escapeString($data['kontoid'])."' 
+        WHERE rnnr=".intval($data['rnnr']);
         $db->query($sql);
 
-        return (object) $data;
     }
 
 

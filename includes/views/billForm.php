@@ -3,6 +3,11 @@
         <div class="row">
             <form id="rechnungErstellen-form" action="billForm" method="post" role="form">
                 <div class="col-sm-12">
+                    <div class="form-group" style="display: none;">
+                        <label for="rnnr">Rechnungsnummer</label>
+                        <input type="text" placeholder="Rn Nr" name="rnnr" class="form-control" id="rnnr"
+                               value="<?php echo $this->rnnr; ?>">
+                    </div>
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <label for="vname">Vorname</label>
